@@ -1,0 +1,52 @@
+// Размер блока (прямоугольник)
+.u-rect-sm{
+    width: 220px;
+    height: 60px;
+}
+
+// Цвет фона
+.u-bg-yellow{
+    background-color: $yellow-color;
+}
+.u-bg-white{
+    background-color: $white-color;
+}
+
+// Шрифт текста
+
+
+// Цвет текста
+.u-text-white{
+    color: $white-color;
+}
+.u-text-gray{
+    color: $gray-color;
+}
+
+.u-no-underline{
+    text-decoration: none;
+}
+
+// Отсутствие рамки
+.u-no-border{
+    border: none;
+}
+
+// Закругленная рамка
+.u-rounded-sm{
+    border-radius: 16px;
+}
+.u-rounded-md{
+    border-radius: 20px;
+}
+.u-rounded-lg{
+    border-radius: 24px;
+}
+
+.button{
+    @include flex-center;
+    @include font-poppins-semibold;
+    gap: 8px;
+}
+
+
