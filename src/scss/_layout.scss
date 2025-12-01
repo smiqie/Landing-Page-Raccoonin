@@ -46,3 +46,12 @@
         gap: 20px;
     }
 }
+
+.preview-section{
+    height: 500px;
+    min-height: 500px;
+    &__container{
+        @include flex-center;
+        height: 100%;
+    }
+}

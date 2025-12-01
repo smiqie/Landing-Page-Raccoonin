@@ -586,12 +586,15 @@ table {
   gap: 20px;
 }
 
-.u-text-white {
-  color: white;
+.preview-section {
+  height: 500px;
+  min-height: 500px;
 }
-
-.u-text-gray {
-  color: #2D2D2D;
+.preview-section__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .u-no-underline {
@@ -602,12 +605,12 @@ table {
   border: none;
 }
 
-.u-rounded-md {
-  border-radius: 20px;
-}
-
 .u-rounded-lg {
   border-radius: 24px;
+}
+
+.u-text-white {
+  color: white;
 }
 
 .button {
@@ -653,7 +656,7 @@ table {
 }
 
 .container {
-  width: 1280px;
+  width: 1440px;
   margin-inline: auto;
 }
 
