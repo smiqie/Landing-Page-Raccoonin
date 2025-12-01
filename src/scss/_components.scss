@@ -1,52 +1,68 @@
-// Размер блока (прямоугольник)
-.u-rect-sm{
-    width: 220px;
-    height: 60px;
-}
-
-// Цвет фона
-.u-bg-yellow{
-    background-color: $yellow-color;
-}
-.u-bg-white{
-    background-color: $white-color;
-}
-
-// Шрифт текста
-
-
 // Цвет текста
-.u-text-white{
+.u-text-white {
     color: $white-color;
 }
-.u-text-gray{
+
+.u-text-gray {
     color: $gray-color;
 }
 
-.u-no-underline{
+.u-no-underline {
     text-decoration: none;
 }
 
 // Отсутствие рамки
-.u-no-border{
+.u-no-border {
     border: none;
 }
 
-// Закругленная рамка
-.u-rounded-sm{
-    border-radius: 16px;
-}
-.u-rounded-md{
+
+.u-rounded-md {
     border-radius: 20px;
 }
-.u-rounded-lg{
+
+.u-rounded-lg {
     border-radius: 24px;
 }
 
-.button{
+
+// ========== BEM BLOCKS ==========
+.button {
+    // for links
+    text-decoration: none;
     @include flex-center;
     @include font-poppins-semibold;
-    gap: 8px;
+    //gap: 8px;
+    width: 220px;
+    height: 60px;
+    border-radius: 16px;
+    &--yellow {
+        background-color: $yellow-color;
+    }
+    &--white {
+        background-color: $white-color;
+    }
+    &--gap-sm{
+        gap: 8px;
+    }
+    &--gap-md{
+        gap: 12px;
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        &--gray{
+            color: $gray-color;
+        }
+    }
+    &__label{
+        @include font-mulish-regular;
+        font-size: 12px;
+    }
+    &__store{
+        font-size: 16px;
+    }
 }
 
-
+// .container {}

@@ -552,19 +552,6 @@ table {
   margin-right: 32px;
 }
 
-.u-rect-sm {
-  width: 220px;
-  height: 60px;
-}
-
-.u-bg-yellow {
-  background-color: #FFDF90;
-}
-
-.u-bg-white {
-  background-color: white;
-}
-
 .u-text-white {
   color: white;
 }
@@ -581,10 +568,6 @@ table {
   border: none;
 }
 
-.u-rounded-sm {
-  border-radius: 16px;
-}
-
 .u-rounded-md {
   border-radius: 20px;
 }
@@ -594,13 +577,45 @@ table {
 }
 
 .button {
+  text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Poppins-SemiBold";
   font-weight: 600;
   font-style: normal;
+  width: 220px;
+  height: 60px;
+  border-radius: 16px;
+}
+.button--yellow {
+  background-color: #FFDF90;
+}
+.button--white {
+  background-color: white;
+}
+.button--gap-sm {
   gap: 8px;
+}
+.button--gap-md {
+  gap: 12px;
+}
+.button__text {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}
+.button__text--gray {
+  color: #2D2D2D;
+}
+.button__label {
+  font-family: "Mulish-Regular";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+}
+.button__store {
+  font-size: 16px;
 }
 
 * {
@@ -609,4 +624,7 @@ table {
 
 html {
   background-color: #090C13;
+  font-family: "Mulish-Regular", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }/*# sourceMappingURL=main.css.map */
