@@ -31,7 +31,7 @@
 
   <header class="header">
     <div class="header__container container">
-      <a href="/" class="header__main-link" title="Home">
+      <a href="/" class="header__main-link focus-visible" title="Home">
         <img class="header__logo" src="src/icons/Logo.svg" alt="Raccoonim Home">
       </a>
 
@@ -39,11 +39,11 @@
         <ul class="header__list">
 
           <li class="header__item">
-            <a href="/" class="header__link u-no-underline u-text-white" title="How it works">How it works</a>
+            <a href="/" class="header__link u-no-underline u-text-white focus-visible" title="How it works">How it works</a>
           </li>
 
           <li class="header__item">
-            <button class="header__button button button--yellow button--gap-sm u-no-border" title="Get Started">
+            <button class="header__button button button--yellow button--gap-sm u-no-border focus-visible" title="Get Started">
               <img src="./src/icons/RocketLaunch.svg" alt="" class="button__icon">
               <span class="button__text button__text--gray">Get Started</span>
             </button>
@@ -58,26 +58,33 @@
   <main class="main">
     <section class="hero-section">
       <div class="hero-section__container container">
-        <h1 class="hero-section__title">Start Raccoonin Around</h1>
-        <p class="hero-section__subtitle">Collect Trash, Avoid Dogs, Be the Raccoon King</p>
 
-        <a href="/" class="hero-section__app-store-link button button--gap-md button--white" title="App Store">
+        <div class="hero-section__top-wrapper">
+          <h1 class="hero-section__title">Start Raccoonin Around</h1>
+          <p class="hero-section__subtitle">Collect Trash, Avoid Dogs, Be the Raccoon King</p>
+        </div>
 
-          <img class="button__store-icon" src="./src/icons/app-store.svg" alt="">
-          <div class="button__text button__text--gray">
-            <span class="button__label">Get it on</span>
-            <strong class="button__store">App Store</strong>
-          </div>
+        <div class="hero-section__bottom-wrapper">
 
-        </a>
+          <a href="/" class="hero-section__app-store-link button button--gap-md button--white focus-visible" title="App Store">
 
-        <a href="/" class="hero-section__google-play-link button  button--gap-md button--white" title="Google Play">
-          <img class="button__store-icon" src="./src/icons/google-play.svg" alt="">
-          <div class="button__text button__text--gray">
-            <span class="button__label">Get it on</span>
-            <strong class="button__store">Google Play</strong>
-          </div>
-        </a>
+            <img class="button__store-icon" src="./src/icons/app-store.svg" alt="">
+            <div class="button__text button__text--gray">
+              <span class="button__label">Get it on</span>
+              <strong class="button__store">App Store</strong>
+            </div>
+
+          </a>
+
+          <a href="/" class="hero-section__google-play-link button  button--gap-md button--white focus-visible" title="Google Play">
+            <img class="button__store-icon" src="./src/icons/google-play.svg" alt="">
+            <div class="button__text button__text--gray">
+              <span class="button__label">Get it on</span>
+              <strong class="button__store">Google Play</strong>
+            </div>
+          </a>
+
+        </div>
 
       </div>
     </section>

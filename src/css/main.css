@@ -535,10 +535,12 @@ table {
   font-display: swap;
 }
 .header {
+  padding-block: 20px;
+}
+.header__container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-block: 20px;
 }
 .header__list {
   display: flex;
@@ -549,7 +551,39 @@ table {
   font-family: "Poppins-SemiBold";
   font-weight: 600;
   font-style: normal;
+  font-size: 16px;
   margin-right: 32px;
+}
+
+.hero-section {
+  height: 410px;
+  min-height: 410px;
+  display: flex;
+  align-items: center;
+}
+.hero-section__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-section__top-wrapper {
+  margin-bottom: 40px;
+}
+.hero-section__title {
+  font-family: "Poppins-Bold";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 67px;
+  line-height: 130%;
+}
+.hero-section__subtitle {
+  text-align: center;
+  font-size: 28px;
+}
+.hero-section__bottom-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
 .u-text-white {
@@ -618,12 +652,23 @@ table {
   font-size: 16px;
 }
 
+.container {
+  width: 1280px;
+  margin-inline: auto;
+}
+
+.focus-visible:focus-visible {
+  outline: 2px solid #1A73E8;
+  outline-offset: 4px;
+}
+
 * {
   box-sizing: border-box;
 }
 
 html {
   background-color: #090C13;
+  color: white;
   font-family: "Mulish-Regular", sans-serif;
   font-weight: 400;
   font-style: normal;

@@ -32,7 +32,6 @@
     text-decoration: none;
     @include flex-center;
     @include font-poppins-semibold;
-    //gap: 8px;
     width: 220px;
     height: 60px;
     border-radius: 16px;
@@ -65,4 +64,14 @@
     }
 }
 
-// .container {}
+.container {
+    width: 1280px;
+    margin-inline: auto;
+}
+
+.focus-visible{
+    &:focus-visible{
+        outline: 2px solid $blue-color;
+        outline-offset: 4px;
+    }
+}
