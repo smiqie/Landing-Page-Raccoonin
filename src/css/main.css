@@ -572,6 +572,7 @@ html {
   min-height: 410px;
   display: flex;
   align-items: center;
+  padding: 100px 0 60px 0;
 }
 .hero-section__container {
   display: flex;
@@ -598,11 +599,6 @@ html {
   gap: 20px;
 }
 
-.preview-section {
-  height: 800px;
-  min-height: 800px;
-  margin-bottom: 80px;
-}
 .preview-section__container {
   display: flex;
   justify-content: center;
@@ -611,8 +607,7 @@ html {
 }
 
 .features-section {
-  height: 600px;
-  min-height: 600px;
+  padding-block: 100px;
 }
 .features-section__header {
   display: flex;
@@ -637,11 +632,6 @@ html {
   gap: 50px;
 }
 
-.customization-section {
-  height: 700px;
-  min-height: 700px;
-  margin-bottom: 120px;
-}
 .customization-section__title {
   font-size: 38px;
   font-family: "Poppins-Bold";
@@ -670,8 +660,43 @@ html {
 }
 
 .worlds-section {
-  height: 650px;
-  min-height: 650px;
+  padding-block: 100px;
+}
+.worlds-section__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.worlds-section__title {
+  font-size: 38px;
+  font-family: "Poppins-Bold";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 130%;
+  margin-bottom: 20px;
+}
+.worlds-section__subtitle {
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+.worlds-section__box-container {
+  display: flex;
+  gap: 30px;
+}
+
+.footer {
+  padding-block: 25px;
+}
+.footer__copyright {
+  font-size: 14px;
+}
+.footer__icon-box {
+  display: flex;
+  gap: 16px;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .u-no-underline {
@@ -804,6 +829,32 @@ html {
 .advice-box__text {
   font-size: 21px;
   color: #2D2D2D;
+}
+
+.world-box {
+  height: 450px;
+  min-height: 450px;
+  background-color: #3B3B3B;
+  border-radius: 20px;
+}
+.world-box__image {
+  margin-bottom: 30px;
+  display: block;
+}
+.world-box__text-block {
+  padding-inline: 30px;
+}
+.world-box__title {
+  font-family: "Poppins-SemiBold";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 130%;
+  margin-bottom: 12px;
+}
+.world-box__subtitle {
+  font-size: 21px;
+  line-height: 150%;
 }
 
 .focus-visible:focus-visible {

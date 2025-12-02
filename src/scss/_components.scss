@@ -121,7 +121,29 @@
     }
 }
 
-
+.world-box{
+    height: 450px;
+    min-height: 450px;
+    background-color: $color-block-dark;
+    border-radius: 20px;
+    &__image{
+        margin-bottom: 30px;
+        display: block;
+    }
+    &__text-block{
+        padding-inline: 30px;
+    }
+    &__title{
+        @include  font-poppins-semibold;
+        font-size: 28px;
+        line-height: 130%;
+        margin-bottom: 12px;
+    }
+    &__subtitle{
+        font-size: 21px;
+        line-height: 150%;
+    }
+}
 // DYNAMIC
 .focus-visible{
     &:focus-visible{
