@@ -534,6 +534,18 @@ table {
   font-style: normal;
   font-display: swap;
 }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #090C13;
+  color: #ffffff;
+  font-family: "Mulish-Regular", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .header {
   padding-block: 20px;
 }
@@ -638,7 +650,7 @@ table {
 }
 
 .u-text-white {
-  color: white;
+  color: #ffffff;
 }
 
 .button {
@@ -657,7 +669,7 @@ table {
   background-color: #FFDF90;
 }
 .button--white {
-  background-color: white;
+  background-color: #ffffff;
 }
 .button--gap-sm {
   gap: 8px;
@@ -684,7 +696,7 @@ table {
 }
 
 .container {
-  width: 1440px;
+  width: 1280px;
   margin-inline: auto;
 }
 
@@ -728,16 +740,4 @@ table {
 .focus-visible:focus-visible {
   outline: 2px solid #1A73E8;
   outline-offset: 4px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  background-color: #090C13;
-  color: white;
-  font-family: "Mulish-Regular", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }/*# sourceMappingURL=main.css.map */

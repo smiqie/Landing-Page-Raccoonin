@@ -11,7 +11,7 @@
     border-radius: 24px;
 }
 .u-text-white{
-    color: $white-color;
+    color: $color-white;
 }
 
 
@@ -25,10 +25,10 @@
     height: 60px;
     border-radius: 16px;
     &--yellow {
-        background-color: $yellow-color;
+        background-color: $color-sand;
     }
     &--white {
-        background-color: $white-color;
+        background-color: $color-white;
     }
     &--gap-sm{
         gap: 8px;
@@ -41,7 +41,7 @@
         flex-direction: column;
         font-size: 16px;
         &--gray{
-            color: $gray-color;
+            color: $color-slate;
         }
     }
     &__label{
@@ -54,7 +54,7 @@
 }
 
 .container {
-    width: 1440px;
+    width: 1280px;
     margin-inline: auto;
 }
 
@@ -70,13 +70,13 @@
         border-radius: 16px;
         margin-bottom: 30px;
         &--orange{
-            background-color: #FF6250;
+            background-color: $color-coral;
         }
         &--white{
-            background-color: #F2BFAF;
+            background-color: $color-peach;
         }
         &--yellow{
-            background-color: #F8D57E;
+            background-color: $color-gold-light;
         }
     }
     &__title{
@@ -97,7 +97,7 @@
 // DYNAMIC
 .focus-visible{
     &:focus-visible{
-        outline: 2px solid $blue-color;
+        outline: 2px solid $color-primary-blue;
         outline-offset: 4px;
     }
 }
