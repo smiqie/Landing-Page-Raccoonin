@@ -22,11 +22,11 @@
 }
 
 .hero-section{
-    height: 410px;
-    min-height: 410px;
+    //height: 410px;
+    //min-height: 410px;
     display: flex;
     align-items: center;
-    padding: 100px 0 60px 0;
+    padding: clamp(3.75rem, 1.45rem + 6.4vw, 6.25rem) 0 60px 0;
     &__container{
         display: flex;
         flex-direction: column;
@@ -37,14 +37,12 @@
     }
     &__title{
         @include font-poppins-bold;
-        //font-size: 67px;
         font-size: clamp(1.688rem, -0.612rem + 6.4vw, 4.188rem);
         line-height: 130%;
     }
     &__subtitle{
         text-align: center;
-        //font-size: 28px;
-        font-size: clamp(1rem, 0.31rem + 1.92vw, 1.75rem);    
+        font-size: clamp(0.875rem, 0.128rem + 2.08vw, 1.688rem);
     }
     &__bottom-wrapper{
         display: flex;
@@ -58,10 +56,14 @@
         @include flex-center;
         height: 100%;
     }
+    &__game-illustration{
+        height: auto;
+        width: clamp(29.25rem, -5.55rem + 102.4vw, 71.25rem);
+    }
 }
 
 .features-section{
-    padding-block: 100px;
+    padding-block: clamp(3.75rem, 1.45rem + 6.4vw, 6.25rem);
     &__header{
         display: flex;
         flex-direction: column;
@@ -69,25 +71,26 @@
     }
     &__title{
         @include font-poppins-bold;
-        font-size: 38px;
+        font-size: clamp(1.5rem, 0.695rem + 2.24vw, 2.375rem);
         line-height: 130%;
         margin-bottom: 20px;
     }
     &__subtitle{
-        font-size: 16px;
+        font-size: clamp(0.813rem, 0.64rem + 0.48vw, 1rem);
+        line-height: 130%;
         margin-bottom: 50px;
     }
     &__content-container{
         display: flex;
-        justify-content: center;
-        gap: 50px;
+        justify-content: space-around;
     }
 }
 
 
 .customization-section{
+    
     &__title{
-        font-size: 38px;
+        font-size: clamp(1.5rem, 0.695rem + 2.24vw, 2.375rem);
         @include font-poppins-bold;
         line-height: 130%;
         margin-bottom: 20px;
@@ -99,10 +102,12 @@
         color: $color-slate;
     }
     &__content-container{
+        margin-inline: auto;
         background-color: $color-sand;
         display: flex;
         justify-content: space-around;
-        padding: 80px 40px;
+        width: clamp(31.25rem, -5.55rem + 102.4vw, 71.25rem);
+        padding: clamp(3.75rem, 2.6rem + 3.2vw, 5rem) 40px;
         border-radius: 16px;
     }
     &__advice-container{
@@ -120,7 +125,7 @@
         align-items: center;
     }
     &__title{
-        font-size: 38px;
+        font-size: clamp(1.5rem, 0.695rem + 2.24vw, 2.375rem);
         @include font-poppins-bold;
         line-height: 130%;
         margin-bottom: 20px;
@@ -128,6 +133,7 @@
     &__subtitle{
         font-size: 16px;
         margin-bottom: 60px;
+        text-align: center;
     }
     &__box-container{
         display: flex;

@@ -89,8 +89,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -572,11 +571,9 @@ html {
 }
 
 .hero-section {
-  height: 410px;
-  min-height: 410px;
   display: flex;
   align-items: center;
-  padding: 100px 0 60px 0;
+  padding: clamp(3.75rem, 1.45rem + 6.4vw, 6.25rem) 0 60px 0;
 }
 .hero-section__container {
   display: flex;
@@ -595,7 +592,7 @@ html {
 }
 .hero-section__subtitle {
   text-align: center;
-  font-size: clamp(1rem, 0.31rem + 1.92vw, 1.75rem);
+  font-size: clamp(0.875rem, 0.128rem + 2.08vw, 1.688rem);
 }
 .hero-section__bottom-wrapper {
   display: flex;
@@ -609,9 +606,13 @@ html {
   align-items: center;
   height: 100%;
 }
+.preview-section__game-illustration {
+  height: auto;
+  width: clamp(29.25rem, -5.55rem + 102.4vw, 71.25rem);
+}
 
 .features-section {
-  padding-block: 100px;
+  padding-block: clamp(3.75rem, 1.45rem + 6.4vw, 6.25rem);
 }
 .features-section__header {
   display: flex;
@@ -622,22 +623,22 @@ html {
   font-family: "Poppins-Bold";
   font-weight: 700;
   font-style: normal;
-  font-size: 38px;
+  font-size: clamp(1.5rem, 0.695rem + 2.24vw, 2.375rem);
   line-height: 130%;
   margin-bottom: 20px;
 }
 .features-section__subtitle {
-  font-size: 16px;
+  font-size: clamp(0.813rem, 0.64rem + 0.48vw, 1rem);
+  line-height: 130%;
   margin-bottom: 50px;
 }
 .features-section__content-container {
   display: flex;
-  justify-content: center;
-  gap: 50px;
+  justify-content: space-around;
 }
 
 .customization-section__title {
-  font-size: 38px;
+  font-size: clamp(1.5rem, 0.695rem + 2.24vw, 2.375rem);
   font-family: "Poppins-Bold";
   font-weight: 700;
   font-style: normal;
@@ -651,10 +652,12 @@ html {
   color: #2D2D2D;
 }
 .customization-section__content-container {
+  margin-inline: auto;
   background-color: #FFDF90;
   display: flex;
   justify-content: space-around;
-  padding: 80px 40px;
+  width: clamp(31.25rem, -5.55rem + 102.4vw, 71.25rem);
+  padding: clamp(3.75rem, 2.6rem + 3.2vw, 5rem) 40px;
   border-radius: 16px;
 }
 .customization-section__advice-container {
@@ -672,7 +675,7 @@ html {
   align-items: center;
 }
 .worlds-section__title {
-  font-size: 38px;
+  font-size: clamp(1.5rem, 0.695rem + 2.24vw, 2.375rem);
   font-family: "Poppins-Bold";
   font-weight: 700;
   font-style: normal;
@@ -682,6 +685,7 @@ html {
 .worlds-section__subtitle {
   font-size: 16px;
   margin-bottom: 60px;
+  text-align: center;
 }
 .worlds-section__box-container {
   display: flex;
@@ -734,9 +738,9 @@ html {
   font-weight: 600;
   font-style: normal;
   width: clamp(10rem, 6.55rem + 9.6vw, 13.75rem);
-  height: 60px;
+  height: clamp(3.125rem, 2.55rem + 1.6vw, 3.75rem);
   border-radius: 16px;
-  transition: all 1s ease-in-out 0;
+  transition: all 0.15s ease-in-out 0s;
 }
 .button--yellow {
   background-color: #FFDF90;
@@ -783,14 +787,14 @@ html {
 }
 
 .card {
-  width: 362px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: clamp(7.5rem, 1.75rem + 16vw, 13.75rem);
 }
 .card__block {
-  height: 228px;
-  width: 228px;
+  height: clamp(8rem, 2.25rem + 16vw, 14.25rem);
+  width: clamp(8rem, 2.25rem + 16vw, 14.25rem);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -815,22 +819,27 @@ html {
 .card__block--yellow:hover {
   background-color: #fcd665;
 }
+.card__image {
+  height: auto;
+  width: 65%;
+}
 .card__title {
   font-family: "Poppins-SemiBold";
   font-weight: 600;
   font-style: normal;
-  font-size: 28px;
+  font-size: clamp(1rem, 0.7rem + 0.96vw, 1.75rem);
   line-height: 130%;
+  text-align: center;
   margin-bottom: 12px;
 }
 .card__subtitle {
-  font-size: 16px;
+  font-size: clamp(0.813rem, 0.64rem + 0.48vw, 1rem);
   text-align: center;
 }
 
 .advice-box {
-  width: 568px;
-  height: 100px;
+  width: clamp(18.75rem, 8rem + 50%, 31.25rem);
+  padding-block: 10px;
   background-color: #ffffff;
   border-radius: 20px;
   padding: 20px;
@@ -870,14 +879,14 @@ html {
 }
 
 .world-box {
-  height: 450px;
-  min-height: 450px;
+  width: clamp(7rem, 5.48rem + 15.36vw, 17rem);
   background-color: #3B3B3B;
   border-radius: 20px;
 }
 .world-box__image {
-  margin-bottom: 30px;
-  display: block;
+  margin-bottom: clamp(0.938rem, 0.075rem + 2.4vw, 1.875rem);
+  height: auto;
+  width: 100%;
 }
 .world-box__text-block {
   padding-inline: 30px;
@@ -886,12 +895,12 @@ html {
   font-family: "Poppins-SemiBold";
   font-weight: 600;
   font-style: normal;
-  font-size: 28px;
+  font-size: clamp(1.375rem, 1.03rem + 0.96vw, 1.75rem);
   line-height: 130%;
   margin-bottom: 12px;
 }
 .world-box__subtitle {
-  font-size: 21px;
+  font-size: clamp(0.938rem, 0.593rem + 0.96vw, 1.313rem);
   line-height: 150%;
 }
 
@@ -914,29 +923,18 @@ html {
   .container {
     width: 720px;
   }
+  .header__nav-menu {
+    display: none;
+  }
+  .customization-section__left-wrapper {
+    display: none;
+  }
+  .customization-section__right-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
-/*
-    width: 220px;
-    height: 60px;
-    border-radius: 16px;
-
-    &--gap-sm{
-        gap: 8px;
-    }
-    &--gap-md{
-        gap: 12px;
-    }
-    &__text{
-        font-size: 16px;
-    }
-    &__label{
-        @include font-mulish-regular;
-        font-size: 12px;
-    }
-    &__store{
-        font-size: 16px;
-    }
-*/
 @media (max-width: 767px) {
   .container {
     width: 540px;
