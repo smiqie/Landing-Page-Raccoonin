@@ -89,7 +89,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -566,6 +567,9 @@ html {
   font-size: 16px;
   margin-right: 32px;
 }
+.header__link:hover {
+  color: #E8E8E8;
+}
 
 .hero-section {
   height: 410px;
@@ -694,6 +698,12 @@ html {
   display: flex;
   gap: 16px;
 }
+.footer__icon {
+  transition: all 1s ease-in-out 0;
+}
+.footer__icon:hover {
+  transform: scale(1.05);
+}
 .footer__container {
   display: flex;
   justify-content: space-between;
@@ -726,12 +736,22 @@ html {
   width: 220px;
   height: 60px;
   border-radius: 16px;
+  transition: all 1s ease-in-out 0;
 }
 .button--yellow {
   background-color: #FFDF90;
 }
+.button--yellow:hover {
+  background-color: #f8c95c;
+}
 .button--white {
   background-color: #ffffff;
+}
+.button--white:hover {
+  background-color: #E8E8E8;
+}
+.button:hover {
+  transform: scale(1.05);
 }
 .button--gap-sm {
   gap: 8px;
@@ -780,11 +800,20 @@ html {
 .card__block--orange {
   background-color: #FF6250;
 }
+.card__block--orange:hover {
+  background-color: #FF7A66;
+}
 .card__block--white {
   background-color: #F2BFAF;
 }
+.card__block--white:hover {
+  background-color: #facfc0;
+}
 .card__block--yellow {
   background-color: #F8D57E;
+}
+.card__block--yellow:hover {
+  background-color: #fcd665;
 }
 .card__title {
   font-family: "Poppins-SemiBold";
@@ -820,11 +849,20 @@ html {
 .advice-box__block--orange {
   background-color: #FF6250;
 }
+.advice-box__block--orange:hover {
+  background-color: #FF7A66;
+}
 .advice-box__block--green {
   background-color: #009379;
 }
+.advice-box__block--green:hover {
+  background-color: #00BFA5;
+}
 .advice-box__block--peach {
   background-color: #F2BFAF;
+}
+.advice-box__block--peach:hover {
+  background-color: #facfc0;
 }
 .advice-box__text {
   font-size: 21px;

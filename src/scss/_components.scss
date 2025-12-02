@@ -26,10 +26,20 @@
     border-radius: 16px;
     &--yellow {
         background-color: $color-sand;
+        &:hover{
+            background-color: $color-sand-hover; // !
+        }
     }
     &--white {
         background-color: $color-white;
+        &:hover{
+            background-color: $color-white-hover; // !
+        }
     }
+    transition: all 1s ease-in-out 0; 
+        &:hover{
+            transform: scale(1.05);
+        }
     &--gap-sm{
         gap: 8px;
     }
@@ -71,12 +81,21 @@
         margin-bottom: 30px;
         &--orange{
             background-color: $color-coral;
+            &:hover{
+                background-color: $color-coral-hover;
+            }
         }
         &--white{
             background-color: $color-peach;
+             &:hover{
+                background-color: $color-peach-hover;
+            }
         }
         &--yellow{
             background-color: $color-gold-light;
+             &:hover{
+                background-color: $color-gold-hover;
+            }
         }
     }
     &__title{
@@ -107,12 +126,21 @@
         margin-right: 20px;
         &--orange{
             background-color: $color-coral;
+            &:hover{
+                background-color: $color-coral-hover;
+            }
         }
         &--green{
             background-color: $color-teal;
+            &:hover{
+                background-color: $color-teal-hover;
+            }
         }
         &--peach{
             background-color: $color-peach;
+            &:hover{
+                background-color: $color-peach-hover;
+            }
         }
     }
     &__text{

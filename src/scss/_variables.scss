@@ -12,6 +12,15 @@ $color-coral: #FF6250;
 $color-peach: #F2BFAF;
 $color-gold-light: #F8D57E;
 
+
+
+$color-sand-hover: #f8c95c;   // более насыщенный золотистый
+$color-white-hover: #E8E8E8;  // мягкий светло-серый
+$color-teal-hover: #00BFA5;   // яркий аквамарин
+$color-coral-hover: #FF7A66;  // чуть светлее коралла
+$color-peach-hover: #facfc0;  // нежный розово-персиковый
+$color-gold-hover: #fcd665;   // яркий солнечный золотой
+
 @font-face{
     font-family: "Mulish-Regular";
     src: url('../fonts/Mulish-Regular.ttf') format('truetype');
