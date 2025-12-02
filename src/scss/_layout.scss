@@ -37,12 +37,14 @@
     }
     &__title{
         @include font-poppins-bold;
-        font-size: 67px;
+        //font-size: 67px;
+        font-size: clamp(1.688rem, -0.612rem + 6.4vw, 4.188rem);
         line-height: 130%;
     }
     &__subtitle{
         text-align: center;
-        font-size: 28px;
+        //font-size: 28px;
+        font-size: clamp(1rem, 0.31rem + 1.92vw, 1.75rem);    
     }
     &__bottom-wrapper{
         display: flex;

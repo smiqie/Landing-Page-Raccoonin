@@ -21,7 +21,8 @@
     text-decoration: none;
     @include flex-center;
     @include font-poppins-semibold;
-    width: 220px;
+    //width: 220px;
+    width: clamp(10rem, 6.55rem + 9.6vw, 13.75rem);
     height: 60px;
     border-radius: 16px;
     &--yellow {
