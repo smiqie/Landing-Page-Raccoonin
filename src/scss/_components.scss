@@ -58,6 +58,26 @@
     margin-inline: auto;
 }
 
+.card{
+    &__block{
+        height: 228px;
+        width: 228px;
+        &--orange{
+            background-color: #FF6250;
+        }
+        &--white{
+            background-color: #F2BFAF;
+        }
+        &--yellow{
+            background-color: #F8D57E;
+        }
+    }
+}
+
+
+
+
+// DYNAMIC
 .focus-visible{
     &:focus-visible{
         outline: 2px solid $blue-color;
