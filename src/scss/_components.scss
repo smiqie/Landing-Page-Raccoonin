@@ -91,7 +91,35 @@
     }
 }
 
-
+.advice-box{
+    width: 568px;
+    height: 100px;
+    background-color: $color-white;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    &__block{
+        height: 60px;
+        width: 60px;
+        border-radius: 15px;
+        @include flex-center;
+        margin-right: 20px;
+        &--orange{
+            background-color: $color-coral;
+        }
+        &--green{
+            background-color: $color-teal;
+        }
+        &--peach{
+            background-color: $color-peach;
+        }
+    }
+    &__text{
+        font-size: 21px;
+        color: $color-slate;
+    }
+}
 
 
 // DYNAMIC

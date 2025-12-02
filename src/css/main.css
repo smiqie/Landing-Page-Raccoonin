@@ -599,8 +599,8 @@ html {
 }
 
 .preview-section {
-  height: 500px;
-  min-height: 500px;
+  height: 800px;
+  min-height: 800px;
   margin-bottom: 80px;
 }
 .preview-section__container {
@@ -635,6 +635,38 @@ html {
   display: flex;
   justify-content: center;
   gap: 50px;
+}
+
+.customization-section {
+  height: 700px;
+  min-height: 700px;
+  margin-bottom: 120px;
+}
+.customization-section__title {
+  font-size: 38px;
+  font-family: "Poppins-Bold";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 130%;
+  margin-bottom: 20px;
+  color: #2D2D2D;
+}
+.customization-section__subtitle {
+  font-size: 21px;
+  margin-bottom: 40px;
+  color: #2D2D2D;
+}
+.customization-section__content-container {
+  background-color: #FFDF90;
+  display: flex;
+  justify-content: space-around;
+  padding: 80px 40px;
+  border-radius: 16px;
+}
+.customization-section__advice-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .u-no-underline {
@@ -735,6 +767,38 @@ html {
 .card__subtitle {
   font-size: 16px;
   text-align: center;
+}
+
+.advice-box {
+  width: 568px;
+  height: 100px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.advice-box__block {
+  height: 60px;
+  width: 60px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.advice-box__block--orange {
+  background-color: #FF6250;
+}
+.advice-box__block--green {
+  background-color: #009379;
+}
+.advice-box__block--peach {
+  background-color: #F2BFAF;
+}
+.advice-box__text {
+  font-size: 21px;
+  color: #2D2D2D;
 }
 
 .focus-visible:focus-visible {
